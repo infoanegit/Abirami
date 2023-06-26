@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <title>array js</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./assets/css/bootstrap.css" rel="stylesheet">
+        <link rel = "stylesheet" href="./assets/css/style.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+    </head>
+    <body style="padding: 30px 0px 10px 0px; border-top: 5px solid black;">
+        <div class="container">
+            <h1 class="h44"> <b>Arrays in javascript</b> </h1>
+            <form id="form" name="form1" method="POST">
+                <div class="container text-center mx-auto mt-5">
+                    <div class="row text-center mx-auto">
+                        <div class="col-sm-6 form-group">
+                            <label for="arrays"><h3>Enter the array of values</h3></label>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <input type="text" id="arrays" class="h33 form-control">
+                        </div>    
+                    </div>
+                    <div class="row text-center mx-auto mx-auto mt-3">
+                        <div class="col-sm-6 form-group">
+                            <label for="arrayPosition"> <h3 class="h22"> Enter the position of array </h3></label>
+                        </div>
+                        <div class="col-sm-1 form-group">
+                            <input type="text"id="arrayPosition"class="form-control">
+                        </div>    
+                    </div>
+                    <div class="row text-center mx-automx-auto mt-3">
+                        <div class="col-sm-6 form-group">
+                            <label for="replaceelement"> <h3 class="h11">Enter the value to replace</h3></label>
+                        </div>
+                        <div class="col-sm-1 form-group">
+                            <input type="text" id="replaceelement" class="form-control">
+                        </div>    
+                    </div>
+                    <div class="row mx-auto mt-5 ">
+                        <div class="col-sm-7 form-group">
+                            <input type="submit" value="submit" name="submit" class="sbutton ss">
+                        </div >
+                        <div class="col-sm-4 form-group">
+                            <input type="reset" value="Reset" id="Reset" name="Reset" class="sbutton">
+                        </div>
+                    </div>    
+                    <div class="row text-center mx-auto mx-auto mt-3 remove">
+                        <div class="form-group">
+                            <label for="array4" class="btn2 form-control"> </label>
+                        </div>  
+                    </div>    
+                    <div class="row text-center mx-auto mx-auto mt-3 remove">
+                        <div class="form-group">
+                            <label for="array5" class="bt1 form-control"> </label>
+                        </div>  
+                    </div> 
+                </div >
+            </form>
+        </div>    
+    </body >
+    <script>
+        $(document).ready(function() {
+            $('.bt1,.btn2').hide();
+            $("form").on('submit', function() {  
+                var arrays = $('#arrays').val();
+                var arrayposition = $('#arrayPosition').val();
+                var replaceelement = $('#replaceelement').val();
+                var array1 = arrays.split(',');
+                let size = array1.length;
+                let arrays0=array1.splice(arrayposition-1,1,replaceelement);
+
+                if(arrays==""){
+                    alert("Enter the array");
+                    return false;
+                }
+                else if(size>5){
+                    alert("Accept only 5 position arrays");
+                    return false;
+                }
+                else if(arrayposition==""){
+                    alert("please enter the array position");
+                    return false;
+                }
+                else if(/[^0-9]|^0+(?!$)/g.test(arrayposition)){
+                    alert("only numeric value allowed");
+                    return false;
+                }
+                else if(replaceelement==""){
+                    alert("please enter the replace element");
+                    return false;
+                }
+                else{
+                    $('.bt1,.btn2').show();
+                    $('.btn2').text('Given Array:' + arrays);                    
+                    $('.bt1').text('Replaced Array:' + array1.toString());   
+                    return false;
+                }
+            });
+            $("#Reset").on('click', function() {
+
+                
+                $('.bt1,.btn2').hide();  
+            });
+        });
+        
+        
+    </script>
+</html>
