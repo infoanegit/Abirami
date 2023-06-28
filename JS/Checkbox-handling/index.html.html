@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title>Check box</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+        <link rel = "stylesheet" href="./assets/css/style.css">   
+    </head>
+    <body align="center"><h1 class="color"><b>Handling Checkboxes</b></h1>
+        <div class="ccc">
+            <input type="checkbox"class="checkbox ">checkbox1 <br>
+            <input type="checkbox"class="checkbox">checkbox2<br>
+            <input type="checkbox"class="checkbox">checkbox3<br>
+            <input type="checkbox"class="checkbox">checkbox4<br>
+            <input type="checkbox"class="checkbox">checkbox5<br><br>
+        </div>
+        <button class="c1 sbutton1">
+            Check All
+        </button>
+        <button class="c2 sbutton1">
+            Uncheck All
+        </button>
+        <button class="c3 sbutton1">
+            Toggle
+        </button>        
+    </body>
+    
+    <script>
+        $(document).ready(function() {
+            $(".c1").on('click', function() {
+                $('.checkbox').prop('checked',true);
+            });
+            $(".c2").on('click', function() {
+                $('.checkbox').prop('checked',false);
+            });
+            $(".c3").on('click', function() {
+                $('.checkbox').each(function() {
+                $(this).prop('checked',!$(this).prop('checked'));
+               });
+            });   
+        });
+    </script>
+</html>    
