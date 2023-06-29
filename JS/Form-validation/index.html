@@ -17,11 +17,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label class="label "for="Frist Name">First Name*</label><br>
+                                <label class="label "for="firstName">First Name*</label><br>
                                 <input type="text" class="form-control" name="fname" id="firstName" placeholder="enter your First name"> 
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label class="label" for="Last Name">Last Name</label><br>
+                                <label class="label" for="lastName">Last Name</label><br>
                                 <input type="text" class="form-control" name="lname" id="lastName" placeholder="enter your Last name"><br>
                             </div>
                         </div>
@@ -37,12 +37,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label class="label" for="Password">Password*</label><br>
+                                <label class="label" for="PassWord">Password*</label><br>
                                 <input type="password" class="form-control" name="password1" id="PassWord" placeholder="enter your Password"> 
                             </div>
                             <div class="col-sm-6 form-group">
-                                <label class="label" for="Confirm Password">Confirm Password*</label><br>
-                                <input type="password" class="form-control" name="password2" id="ConfirmPassword" placeholder="enter your Last name"><br>
+                                <label class="label" for="ConfirmPassword">Confirm Password*</label><br>
+                                <input type="password" class="form-control" name="password2" id="ConfirmPassword" placeholder="enter your Confirm Password"><br>
                             </div>
                         </div>
                     </div>
@@ -50,8 +50,8 @@
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label class="label" for="Gender">Gender</label><br>
-                                <input type="radio" id="Male" name="Gender" value="Male" >Male
-                                <input type="radio" id="Female" name="Gender" value="Female">Female
+                                <input type="radio" name="Male" id="Gender" value="Male" >Male
+                                <input type="radio" name="Female" id="Gender" value="Female">Female
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label class="label" for="Hobbies">Hobbies</label><br>
@@ -66,14 +66,14 @@
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label class="label" for="Source of Income">Source of Income</label><br>
-                                <select name="Source of income" style="width:100%;">
+                                <select name="Source of income" id="Source of Income" style="width:100%;">
                                     <option value="Employed">Employed</option>
                                     <option value="Unemployed">Unemployed</option>
                                 </select>     
                             </div>
                             <div class="col-sm-5 form-group">
                                 <label class="label" for="Income">Income</label><br>
-                                <input type="range" min="1" max="100" value="25" style="width:100%;"><br><br>
+                                <input type="range" min="1" max="100" value="25" id="Income" style="width:100%;"><br><br>
                             </div>
                             <div class="col-sm-1 from group">
                                 <input type="button" class ="sbutton1" value="20k">
@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-sm-6 form-group">
                                 <label class="label" for="Upload Profile picture">Upload Profile picture</label><br>
-                                <input type="file" name="choose file" value="choose file">
+                                <input type="file" name="choose file" value="choose file" id="Upload Profile picture">
                             </div>
                             <div class="col-sm-6 form-group">
                                 <label class="label" for="Age">Age</label><br>
@@ -95,7 +95,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label class="label" for="Bio">Bio</label><br>
+                                <label class="label" for="bio">Bio</label><br>
                             </div>
                             <div class="col-sm-12 form-group">
                                 <textarea class="form-control" rows="3" id="bio"></textarea>  
@@ -121,11 +121,11 @@
                     var PassWord = $('#PassWord').val();
                     var ConfirmPassword = $('#ConfirmPassword').val();
                     if(firstName==""){
-                        alert("Enter frist name");
+                        alert("Enter first  name");
                         return false;
                     }
                     else if(!/^[a-zA-Z]*$/g.test(firstName)){
-                        alert('Valid fristname given.');
+                        alert('Valid first name given.');
                         return false;   
                     } 
                     else if(lastName==""){
@@ -141,7 +141,7 @@
                         return false; 
                     }
                     else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Mail)){
-                        alert('please give Valid mail .');
+                        alert('Please provide valid mail.');
                         return false;
                     }
                     else  if(PassWord==""){
@@ -149,15 +149,15 @@
                         return false;
                     }
                     else if(ConfirmPassword==""){
-                        alert("Enter your ConfirmPassword")
+                        alert("Confirm the password")
                         return false;
                     }
                     else if(PassWord!=ConfirmPassword){
-                        alert ('password dose not match');
+                        alert ('Password does not match');
                         return false;
                     }
                     else{
-                        alert("From Submitted")
+                        alert("Form Submitted")
                         return true;
                     }
                      
