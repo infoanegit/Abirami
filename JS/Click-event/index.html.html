@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title>Mouse event</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+        <link href="./assets/css/bootstrap.css" rel="stylesheet">   
+    </head>
+    <title>Mouse handling</title>
+    <body>
+        <h1 align="center"><u>EVENT HANDLING-JAVASCRIPT</u></h1>
+        <div class="container bg-dark w-50" align="center"><h1><p style="color:red;">Click anywhere to know your mouse click event!!</p></h1></div>
+        <script>
+            $("div p").on('mousedown', function(event){
+                switch(event.which){
+                    case 1:
+                        alert("left mouse");
+                        break;
+                    case 2:
+                        alert("middle  mouse");
+                        break;
+                    case 3:
+                        alert("right  mouse");
+                        break;
+                    default:
+                        console.log('default')
+                }
+            })
+        </script>
+    </body>
+</html>    
