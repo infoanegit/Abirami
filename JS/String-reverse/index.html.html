@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+    <head>
+        <title>String reverse</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+        <link href="./assets/css/bootstrap.css" rel="stylesheet">
+        <link rel = "stylesheet" href="./assets/css/style.css">   
+    </head>
+    <body>
+        <div  class="container bg-dark w-50" align="center"><br><br>
+        <h2 align="center"class="color">STRING REVERSE</h2>
+        <p  align="center"class="text-light">Enter any string</p>
+       
+            <input type="text" id="string" ><br><br>
+            <input type="button" id="S1" value="submit" name="submit" class="sbutton">
+            <input type="button" id="S2" value="Reset" name="Reset" class="sbutton">
+            <p id="renderData" class="text-light"></p><br><br>
+        </div>
+    </body>
+    <script>
+            $("#S1").on('click', function() {  
+                $('#renderData').show();
+                var str1 = $('#string').val();
+                if(str1==""){
+                    alert("Enter the any string");
+                    $('#renderData').hide();
+                    return false;
+                }else{
+                    let stringreverse1 = str1.split('').reverse().join('');
+                    $('#renderData').html(`Given String: ${str1} <br> Given string reverse: ${stringreverse1}`); 
+                }
+            });
+
+            $("#S2").on('click', function() {    
+                $('#renderData').hide();
+                $('#string').val('');
+                return false;
+            });
+    </script>
+</html>
