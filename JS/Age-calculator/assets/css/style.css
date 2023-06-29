@@ -1,0 +1,119 @@
+.label {
+    color:  rgb(4, 196, 148);
+    font-weight:600px;
+    font-weight:bold;
+    font-size: 20px;
+    
+}
+.sborder {
+    border: 33px solid rgb(53, 123, 141);
+    width: 1000px;
+    aspect-ratio:5;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+}
+.text {
+    width: 200px;
+    height: 30px;
+    border: 1px solid block;
+}
+.text1 {
+    width: 400px;
+    height: 30px;
+    border: 1px solid block;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container {
+    margin: 10px;
+    padding: 20px;
+}
+.sbutton{
+    background-color: #0196F4;
+    color: white;
+    font-size:22px;
+    border-radius:12px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+
+}
+.sbutton1{
+    background-color: rgb(4, 196, 148);
+    color: white;
+    font-size:23px;
+    border: none;
+
+}
+.bt1{
+    margin-left:-132px;
+    background-color: #04AA6D; 
+    border-radius:12px;
+}
+.btn2{
+    margin-left:-134px; 
+    background-color: #2196F3; 
+    border-radius:12px;
+}
+.h11{
+    margin-right: -173px;
+}
+.h22{
+    margin-right: -173px;
+}
+.h33{
+    margin-left: -110px;
+}
+.h44{
+    color:grey;
+    font-size: 42px; 
+    margin-left: 233px;
+}
+.ss{
+    margin-right:-717px;
+}
+.check{
+    background-color: black;
+}
+.ccc{
+    color:rgb(2, 4, 22)
+}
+.color{
+    color:rgb(128, 6, 165);
+} 
+#outside {
+    position: absolute;
+    background-color: rgb(30, 211, 193);
+    width: 385px;
+    height: 385px;
+    top: 25%;
+    left: 35%;
+  }
+  
+#inside {
+    position: absolute;
+    background-color: rgb(226, 2, 13);
+    width: 240px;
+    height: 240px;
+    top: 18%;
+    left: 18%;
+}
+
+#inside1 {
+    position: absolute;
+    background-color: rgb(150, 255, 80);
+    width: 140px;
+    height: 140px;
+    top: 21%;
+    left: 21%;
+  }
+#inside2 {
+    position: absolute;
+    background-color: rgb(162, 4, 194);
+    width: 65px;
+    height: 65px;
+    top: 27%;
+    left: 27%;
+}
