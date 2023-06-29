@@ -40,29 +40,28 @@
     cursor: pointer;
 
 }
-.sbutton1{
+ .sbutton1{
     background-color: rgb(4, 196, 148);
     color: white;
     font-size:23px;
     border: none;
 
 }
-.bt1{
-    margin-left:-132px;
+ .bt1{
+  
     background-color: #04AA6D; 
     border-radius:12px;
 }
 .btn2{
-    margin-left:-134px; 
+    
     background-color: #2196F3; 
     border-radius:12px;
 }
+
 .h11{
     margin-right: -173px;
 }
-.h22{
-    margin-right: -173px;
-}
+
 .h33{
     margin-left: -110px;
 }
@@ -70,9 +69,6 @@
     color:grey;
     font-size: 42px; 
     margin-left: 233px;
-}
-.ss{
-    margin-right:-717px;
 }
 .check{
     background-color: black;
