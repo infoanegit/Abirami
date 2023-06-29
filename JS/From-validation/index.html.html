@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link rel = "stylesheet" href="./assets/css/style.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    </head>
+    <body>
+        <div class="container sborder form-group"> 
+            <div class="container ">
+                <h1 align ="center"><b>Create Account</b></h1>
+                <hr>
+                <form id="form" name="form1" method="POST">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label "for="Frist Name">First Name*</label><br>
+                                <input type="text" class="form-control" name="fname" id="firstName" placeholder="enter your First name"> 
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Last Name">Last Name</label><br>
+                                <input type="text" class="form-control" name="lname" id="lastName" placeholder="enter your Last name"><br>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="col-sm-12  form-group">
+                                <label class="label" for="Mail"> Mail*</label><br>
+                                <input type="text" class="form-control "name="mail" id="Mail" placeholder="enter your Mail"><br>
+                            </div>
+                        </div>       
+                    </div> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Password">Password*</label><br>
+                                <input type="password" class="form-control" name="password1" id="PassWord" placeholder="enter your Password"> 
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Confirm Password">Confirm Password*</label><br>
+                                <input type="password" class="form-control" name="password2" id="ConfirmPassword" placeholder="enter your Last name"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Gender">Gender</label><br>
+                                <input type="radio" id="Male" name="Gender" value="Male" >Male
+                                <input type="radio" id="Female" name="Gender" value="Female">Female
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Hobbies">Hobbies</label><br>
+                                <input class="check-space" type="checkbox" id="Hobbies" value="Music">Music
+                                <input class="check-space" type="checkbox" id="Hobbies" value="sports">sports
+                                <input type="checkbox" id="Hobbies" value="Travel">Travel
+                                <input type="checkbox" id="Hobbies" value="Movies">Movies<br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Source of Income">Source of Income</label><br>
+                                <select name="Source of income" style="width:100%;">
+                                    <option value="Employed">Employed</option>
+                                    <option value="Unemployed">Unemployed</option>
+                                </select>     
+                            </div>
+                            <div class="col-sm-5 form-group">
+                                <label class="label" for="Income">Income</label><br>
+                                <input type="range" min="1" max="100" value="25" style="width:100%;"><br><br>
+                            </div>
+                            <div class="col-sm-1 from group">
+                                <input type="button" class ="sbutton1" value="20k">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Upload Profile picture">Upload Profile picture</label><br>
+                                <input type="file" name="choose file" value="choose file">
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Age">Age</label><br>
+                                <input type="text" class="form-control" id="Age" placeholder="18">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="label" for="Bio">Bio</label><br>
+                            </div>
+                            <div class="col-sm-12 form-group">
+                                <textarea class="form-control" rows="3" id="bio"></textarea>  
+                            </div>
+                        </div>
+                    </div>   
+                    <hr> 
+                    <div class="container">
+                        <div align="right">
+                            <input type="submit" value="submit" class ="sbutton" name="submit">
+                        </div>
+                    </div> 
+                </form>    
+            </div>
+        </div>
+    </body>    
+        <script>
+            $(document).ready(function() {
+                $("form").on('submit', function() {
+                    var firstName = $('#firstName').val();
+                    var lastName = $('#lastName').val();
+                    var Mail = $('#Mail').val();
+                    var PassWord = $('#PassWord').val();
+                    var ConfirmPassword = $('#ConfirmPassword').val();
+                    if(firstName==""){
+                        alert("Enter frist name");
+                        return false;
+                    }
+                    else if(!/^[a-zA-Z]*$/g.test(firstName)){
+                        alert('Valid fristname given.');
+                        return false;   
+                    } 
+                    else if(lastName==""){
+                        alert("Enter your last name");
+                        return false;
+                    }
+                    else if(!/^[a-zA-Z]*$/g.test(lastName)){
+                        alert('Valid lastname given.');
+                        return false;   
+                    } 
+                    else if(Mail==""){
+                        alert("Enter your mail name");
+                        return false; 
+                    }
+                    else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Mail)){
+                        alert('please give Valid mail .');
+                        return false;
+                    }
+                    else  if(PassWord==""){
+                        alert("Enter your password")
+                        return false;
+                    }
+                    else if(ConfirmPassword==""){
+                        alert("Enter your ConfirmPassword")
+                        return false;
+                    }
+                    else if(PassWord!=ConfirmPassword){
+                        alert ('password dose not match');
+                        return false;
+                    }
+                    else{
+                        alert("From Submitted")
+                        return true;
+                    }
+                     
+                });
+
+            });
+        
+        </script>  
+</html> 
+   
