@@ -1,0 +1,43 @@
+.label {
+    color:  rgb(4, 196, 148);
+    font-weight:600px;
+    font-weight:bold;
+    font-size: 20px;
+    
+}
+.sborder {
+    border: 33px solid rgb(53, 123, 141);
+    width: 1000px;
+    aspect-ratio:5;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+}
+.text {
+    width: 200px;
+    height: 30px;
+    border: 1px solid block;
+}
+.text1 {
+    width: 400px;
+    height: 30px;
+    border: 1px solid block;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container {
+    margin: 10px;
+    padding: 20px;
+}
+.sbutton{
+    background-color: #0196F4;
+    color: white;
+    font-size:22px;
+    border-radius:12px;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+
+}
+
