@@ -24,7 +24,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="./assets/css/bootstrap.css" rel="stylesheet">
             <link rel = "stylesheet" href="./assets/css/style.css">  
-            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>   
         </head>
         <body class="style">
             <div class="container w-25 mx-auto p-4 mt-3 text-center colors">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="row  mt-3">
                             <label for = "uploadimage" ><b>Upload your file</b></label>
-                            <input type="file" id="uploadimage" class="form-control" name="upload" value="upload">
+                            <input type="file" id="uploadimage"class="form-control" name="upload" value="upload">
                     </div>  
                     <div class="mt-3">
                         <a href="list.cfm" class ="btn btn-primary" name="list">List</a>
