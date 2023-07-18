@@ -25,7 +25,6 @@
             <link href="./assets/css/bootstrap.css" rel="stylesheet">
             <link rel = "stylesheet" href="./assets/css/style.css">  
             <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
-           
         </head>
         <body class="style">
             <div class="container w-25 mx-auto p-4 mt-3 text-center colors">
