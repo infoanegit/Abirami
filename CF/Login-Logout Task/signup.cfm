@@ -8,26 +8,26 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
     </head>   
     <body>
-        <div class="container from-group bg-info w-50 p-5 mt-5">
+        <div class="container form-group bg-info w-50 p-5 mt-5">
             <div class="container ">
                 <h1 align ="center"><b>New User-Sign in</b></h1>
             </div>
             <form  method="post" id="form" name="test" >
-                <div class="container from-group text-center mt-3">
-                    <label for="UserName" class="text-primary"><h4>Give Your UserName</h4></label><br>
-                    <input type="text" id="userName" name="userName" class="from-control mt-2" placeholder="enter the username">
+                <div class="container form-group text-center w-50 mt-3">
+                    <label for="userName" class="text-primary"><h4>Give Your UserName</h4></label><br>
+                    <input type="text" id="userName" name="userName" class="form-control mt-2" placeholder="enter the username">
                 </div> 
-                <div class="container from-group text-center mt-3">
-                    <label for="passWord" class="text-primary"><h4>Give Your Password</h4></label><br>
-                    <input type="password" id="password" name="password" class="from-control mt-2 " placeholder="enter the password">
+                <div class="container form-group text-center w-50 mt-3">
+                    <label for="password" class="text-primary"><h4>Give Your Password</h4></label><br>
+                    <input type="password" id="password" name="password" class="form-control mt-2 " placeholder="enter the password">
                 </div> 
-                <div class="container from-group text-center mt-3">
+                <div class="container form-group text-center mt-3">
                     <input type="submit" class ="btn btn-warning " name="Sign Up" value="Sign Up"><a href="logout.cfm"></a>
                 </div>  
                 <div class="container text-center mt-3 "> 
                     <p ><a href="index.cfm">Back to Login</p></a>
                 </div>    
-            </from>     
+            </form>     
         </div>
     </body>      
 </html>

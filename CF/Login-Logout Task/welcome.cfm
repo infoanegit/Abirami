@@ -10,7 +10,7 @@
         </head>   
         <body>
             <form id="form" name="welcome" method="post">
-                <div class="container from-group bg-info w-50 p-5 mt-5">
+                <div class="container form-group bg-info w-50 p-5 mt-5">
                     <div class="container ">
                     <h1 align ="center" class="text-warning"><b>WELCOME</b></h1> 
                         <div class="text-center text-success"><h3>Hi...<cfif structKeyExists(session, "username")><cfoutput>#session.username#

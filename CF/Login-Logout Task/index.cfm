@@ -8,26 +8,26 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
     </head>   
     <body>
-        <div class="container from-group bg-info w-50 p-5 mt-5">
+        <div class="container form-group bg-info w-50 p-5 mt-5">
             <div class="container ">
                 <h1 align ="center"><b>USER LOGIN</b></h1>
             </div>
             <form  method="post" id="form" name="test" >
-                <div class="container from-group text-center mt-3">
-                    <label for="UserName" class="text-warning"><h4>UserName</h4></label><br>
-                    <input type="text" id="userName" name="userName" class="from-control mt-2">
+                <div class="container form-group text-center w-50 mt-3">
+                    <label for="userName" class="text-warning"><h4>UserName</h4></label><br>
+                    <input type="text" id="userName" name="userName" class="form-control mt-2">
                 </div> 
-                <div class="container from-group text-center mt-3">
-                    <label for="passWord" class="text-warning" ><h4>Password</h4></label><br>
-                    <input type="password" id="password" name="password" class="from-control mt-2">
+                <div class="container form-group text-center w-50 mt-3">
+                    <label for="password" class="text-warning" ><h4>Password</h4></label><br>
+                    <input type="password" id="password" name="password" class="form-control mt-2">
                 </div>  
-                <div class="container from-group text-center mt-3">
+                <div class="container form-group text-center mt-3">
                     <input type="submit" class ="btn btn-warning" name="Login" value="Login">
                 </div>
                 <div class="container text-center mt-3"> 
                     <p><a href="Signup.cfm">New User? Sign Up</p></a>
                 </div>    
-            </from>     
+            </form>     
         </div>
     </body>      
 </html>
