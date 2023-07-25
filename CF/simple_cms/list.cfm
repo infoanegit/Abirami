@@ -38,8 +38,8 @@
 									<td>#pageInfo.pagename#</td>
 									<td>#pageInfo.pagedesc#</td>
 									<cfif session.userrole EQ "Admin">
-										<td><a href="add.cfm?id=#pageInfo.pageid#" class="btn btn-info">Edit</a>
-										<button class="btn btn-warning deleteBtn" data-id="#pageInfo.pageid#">Delete</button></td>
+										<td><a href="add.cfm?id=#pageInfo.pageid#" class="btn btn-info tets">Edit</a>
+										<a class="btn btn-warning deleteBtn" data-id="#pageInfo.pageid#">Delete</a></td>
 									</cfif>	
 									<cfif session.userrole EQ "editor">
 										<td><a href="add.cfm?id=#pageInfo.pageid#" class="btn btn-info">Edit</a></td>
@@ -60,14 +60,14 @@
 		</div>
 	</html>
 	<script>
-		$(".deleteBtn").on('click',function() {
-			let text = "If you delete the record !\nEither OK or Cancel.";
+		$(".deleteBtn").on('click',function(e) {
+			e.preventDefault();	
+			let text = "Do you want delete the record !\nEither OK or Cancel.";
 			var test= $(this).attr("data-id");
 			if (confirm(text) == true) {
 				location.replace("list.cfm?pageid=" +test);
 			}
 			else {
-				confirm("You canceled!");
 				return false;
 			}
 		});
