@@ -9,7 +9,6 @@
 		</head> 
 		<cfset datObj = createObject( 'component', 'model') >
 		<cfset Userinfo = datObj.getData()>
-
 		<cfif structKeyExists(url, 'id')>
 			<cfset datObj.deleteData("#url.id#")> 
 			<cflocation url="list.cfm" addtoken="false">
@@ -53,7 +52,6 @@
 		$(".deleteBtn").on('click',function() {
 			let text = "Press a button!\nEither OK or Cancel.";
 			var test= $(this).attr("data-id");
-	
 			if (confirm(text) == true) {
 				location.replace("list.cfm?id=" +test);
 			}
