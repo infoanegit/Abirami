@@ -6,7 +6,7 @@
         <link href="./assets/css/bootstrap.css" rel="stylesheet"> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
         <script src="./assets/js/style.js" ></script>
-    </head>   
+     </head>   
     <div class="text-warning text-center mx-auto w-50 ">
         <div class=" bg-secondary"><h1>Date and time function</h1></div><hr>
         <cfset today = now()>
