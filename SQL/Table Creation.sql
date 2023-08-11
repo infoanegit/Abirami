@@ -271,7 +271,7 @@ insert into roysched values('MC3021', 1001, 2000, 12)
 insert into roysched values('MC3021', 2001, 4000, 14)
 insert into roysched values('MC3021', 4001, 6000, 16)
 insert into roysched values('MC3021', 6001, 8000, 18)
-insert into roysched values('MC3021', 8001, 10000, 20)
+insert into roysched values('MC3021', 8001, 10000, 20)f
 insert into roysched values('MC3021', 10001, 12000, 22)
 
 insert into roysched values('MC3021', 12001, 50000, 24)
