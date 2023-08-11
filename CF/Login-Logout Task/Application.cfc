@@ -1,6 +1,7 @@
 component {
-    this.name="test11gh1";
+    this.name="test11gh12";
     this.sessionManagement = true ;
+    this.datasource = "abi_dsn";
     
     function onRequestStart(){
          if (not isDefined("session.username") && listlast(cgi.SCRIPT_NAME,"/") == "welcome.cfm" )

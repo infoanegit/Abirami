@@ -1,7 +1,7 @@
 <cfcomponent>
     <cffunction name="getData" access="public" returnType="query">
 
-        <cfquery name="usersignindata" datasource="abi_dsn">
+        <cfquery name="usersignindata" >
              SELECT * FROM user
         </cfquery>
         <cfreturn usersignindata.recordcount />
@@ -11,7 +11,7 @@
         <cfargument name="userName" type="string" required="true" default="">
         <cfargument name="password" type="string" required="true" default="">
       
-        <cfquery name="insertQry" datasource="abi_dsn">
+        <cfquery name="insertQry">
             INSERT INTO [user] ( user_name,user_password)
             VALUES ( 
                 <cfqueryparam value="#arguments.userName#" cfsqltype="cf_sql_varchar">,
@@ -24,7 +24,7 @@
         <cfargument name="userName" type="string" required="true" default="">
         <cfargument name="password" type="string" required="true" default="">
     
-        <cfquery name="checklogin" datasource="abi_dsn">
+        <cfquery name="checklogin">
             SELECT user_name, user_password 
             FROM [user]
             WHERE user_name = <cfqueryparam value="#arguments.username#" cfsqltype="cf_sql_varchar">
