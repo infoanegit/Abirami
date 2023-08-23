@@ -16,7 +16,7 @@
         <tbody> 
             <cfloop collection ="#systemipabout#" item="value">
                 <cfif value NEQ "location">
-                    <tr class="table-primary bg-info text-secondary">
+                    <tr class="table-primary bg-info text-secondary"> 
                         <td>#value#</td>
                         <td>#systemipabout[value]#</td>
                     </tr>
